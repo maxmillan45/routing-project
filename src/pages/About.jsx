@@ -2,21 +2,27 @@ import React from "react";
 
 function About() {
   return (
-    <div>
-      <h1 className="text-2xl font-bold mb-4">About</h1>
+   <div className="bg-white rounded-2xl shadow-md p-6">
+  <h1 className="text-3xl font-bold text-gray-800 mb-3">
+    About <span className="text-indigo-600">This Project</span>
+  </h1>
 
-      <p>
-        This is a Character Explorer Dashboard built using React and React Router.
-      </p>
+  <p className="text-gray-600 text-lg">
+    This is a Character Explorer Dashboard built using 
+    <span className="font-medium text-gray-800"> React</span> and 
+    <span className="font-medium text-gray-800"> React Router</span>.
+  </p>
 
-      <p className="mt-2">
-        It demonstrates routing, nested routing, and dynamic routing.
-      </p>
+  <p className="mt-3 text-gray-500">
+    It demonstrates concepts like routing, nested routing, and dynamic routing 
+    in a clean and interactive interface.
+  </p>
 
-      <p className="mt-2">
-        Data is fetched from the Rick and Morty API.
-      </p>
-    </div>
+  <p className="mt-3 text-gray-500">
+    All character data is fetched from the 
+    <span className="text-indigo-600 font-medium"> Rick and Morty API</span>.
+  </p>
+</div>
   );
 }
 
