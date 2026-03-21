@@ -1,16 +1,38 @@
-# React + Vite
+# Rick and Morty Character Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
+This project is a React-based web application that displays characters from the Rick and Morty API. It allows users to browse characters, view detailed information, and explore the episodes they appear in.
 
-Currently, two official plugins are available:
+The app demonstrates modern React concepts such as component-based architecture, hooks, routing, and API integration.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- View a list of characters in a responsive grid
+- Click on a character to view detailed information
+- View episodes a character appears in
+- Delete characters from the UI
+- Add new (mock) characters dynamically
+- Fast and responsive UI using Tailwind CSS
+- Navigation using React Router
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- React (Functional Components and Hooks)
+- React Router DOM
+- Tailwind CSS
+- Fetch API
+- Rick and Morty API
+
+---
+
+---
+
+## Installation and Setup
+
+To clone the repository:
+```bash
+git clone https://github.com/maxmillan45/routing-project.git
