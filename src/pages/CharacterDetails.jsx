@@ -1,5 +1,7 @@
-import { useParams, Link, Outlet } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Info from "./Info";
+import Episodes from "./Episodes";
 
 function CharacterDetails() {
   const { id } = useParams();
@@ -15,14 +17,13 @@ function CharacterDetails() {
 
   return (
     <div>
-      <h1>{character.name}</h1>
+      {/* SHOW ONCE HERE */}
+      <h2>{character.name}</h2>
       <img src={character.image} alt={character.name} />
 
-      {/* Tabs */}
-      <Link to="info">Info</Link> | 
-      <Link to="episodes">Episodes</Link>
-
-      <Outlet />
+      {/* PASS DATA */}
+      <Info character={character} />
+      <Episodes character={character} />
     </div>
   );
 }

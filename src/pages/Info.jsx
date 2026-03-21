@@ -1,6 +1,10 @@
-import { useOutletContext } from "react-router-dom";
-
-function Info() {
-  return <p>Character info here</p>;
+function Info({ character }) {
+  return (
+    <div>
+      <p>Status: {character.status}</p>
+      <p>Species: {character.species}</p>
+    </div>
+  );
 }
+
 export default Info;
