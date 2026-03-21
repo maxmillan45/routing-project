@@ -16,15 +16,29 @@ function CharacterDetails() {
   if (!character) return <p>Loading...</p>;
 
   return (
-    <div>
-      {/* SHOW ONCE HERE */}
-      <h2>{character.name}</h2>
-      <img src={character.image} alt={character.name} />
+  <div className="p-6">
+  <div className="bg-white shadow-lg rounded-2xl p-6 max-w-md">
+    
+    <img
+      src={character.image}
+      alt={character.name}
+      className="w-40 h-40 rounded-full mx-auto"
+    />
 
-      {/* PASS DATA */}
-      <Info character={character} />
-      <Episodes character={character} />
+    <h2 className="text-xl font-bold text-center mt-4">
+      {character.name}
+    </h2>
+
+    <div className="mt-4 text-center">
+      <p><span className="font-semibold">Status:</span> {character.status}</p>
+      <p><span className="font-semibold">Species:</span> {character.species}</p>
     </div>
+
+    {/* Episodes component */}
+    <Episodes character={character} />
+
+  </div>
+</div>
   );
 }
 
