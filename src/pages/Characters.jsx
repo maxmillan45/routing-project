@@ -18,11 +18,22 @@ function Characters() {
 
   return (
     <div className="p-6">
+<button
+  onClick={() => {
+    const newChar = {
+      id: Date.now(),
+      name: "New Character",
+      status: "Unknown",
+      species: "Alien",
+      image: "https://via.placeholder.com/300"
+    };
 
-      {/* ➕ CREATE BUTTON */}
-      <button className="mb-6 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
-        + Add Character
-      </button>
+    setCharacters(prev => [newChar, ...prev]);
+  }}
+  className="mb-6 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600"
+>
+  + Add Character
+</button>
 
       {/* GRID */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
